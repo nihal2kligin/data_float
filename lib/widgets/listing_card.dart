@@ -68,7 +68,7 @@ class ListingCard extends StatelessWidget {
                       Text(
                         Formatter.formatCurrency(listing.listPrice),
                         style: const TextStyle(
-                          fontSize: 20,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                           color: Color(0xFF222222),
                         ),

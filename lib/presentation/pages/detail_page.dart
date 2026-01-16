@@ -46,6 +46,24 @@ class _DetailPageState extends State<DetailPage>
                   onTap: () => Navigator.pop(context),
                 ),
               ),
+              title: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 6,
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.white.withAlpha(230),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Text(
+                  'MLS# ${listing.mlsNumber}',
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF0076B9),
+                  ),
+                ),
+              ),
               actions: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -82,28 +100,6 @@ class _DetailPageState extends State<DetailPage>
                           ),
                         );
                       },
-                    ),
-                    Positioned(
-                      top: 15,
-                      left: 60,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 16,
-                          vertical: 6,
-                        ),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withAlpha(230),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Text(
-                          'MLS# ${listing.mlsNumber}',
-                          style: const TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF0076B9),
-                          ),
-                        ),
-                      ),
                     ),
                     Positioned(
                       bottom: 16,
